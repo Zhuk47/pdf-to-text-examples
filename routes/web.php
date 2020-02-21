@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Test OCR routes
+Route::get('test/ocr/', 'OCRController@index')->name('test.index');
+Route::post('test/ocr/', 'OCRController@store')->name('test.store');
